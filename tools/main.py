@@ -9,5 +9,6 @@ def validate():
         print("folder1 exists")
     else: 
         print("folder1 doesnt exist")
+    print(os.listdir(os.path.join(dir_path,os.pardir,os.pardir)))
 
 validate()

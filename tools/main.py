@@ -5,7 +5,7 @@ def validate():
     print(dir_path)
     print(os.listdir(dir_path))
     print(os.listdir(os.path.join(dir_path,os.pardir)))
-    if os.path.exists("../../../model/folder1"):
+    if os.path.exists(os.path.join(dir_path,os.pardir,os.pardir,"model","folder1")):
         print("folder1 exists")
     else: 
         print("folder1 doesnt exist")
